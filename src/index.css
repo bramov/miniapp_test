@@ -3,3 +3,9 @@ body {
   padding: 0;
   background: var(--tg-theme-secondary-bg-color);
 }
+
+.position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

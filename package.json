@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@telegram-apps/telegram-ui": "2.1.6",
+    "@tonconnect/ui-react": "^2.0.9",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

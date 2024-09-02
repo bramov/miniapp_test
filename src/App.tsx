@@ -1,4 +1,5 @@
 import React from 'react';
+import {TonConnectButton, TonConnectUIProvider} from '@tonconnect/ui-react';
 
 import { AppRoot, List } from '@telegram-apps/telegram-ui';
 // import { CellSection } from './components/CellSection';
@@ -9,9 +10,12 @@ import { TimelineSection } from './components/TimelineSection/TimelineSection';
 // import { ModalSection } from './components/ModalSection/ModalSection';
 
 export const App = () => (
-  <AppRoot>
-    <List>
-      <TimelineSection />
-    </List>
-  </AppRoot>
+  <TonConnectUIProvider manifestUrl="https://bramov.github.io/miniapp_test/tonconnect-manifest.json">
+    <AppRoot>
+      <List className="position">
+        <TonConnectButton />
+        <TimelineSection />
+      </List>
+    </AppRoot>
+  </TonConnectUIProvider>
 );
