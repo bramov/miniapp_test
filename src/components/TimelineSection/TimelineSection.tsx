@@ -3,30 +3,30 @@ import { Section, Timeline } from '@telegram-apps/telegram-ui';
 
 const TIMELINE_ITEMS = [
   {
-    header: 'Arrived',
-    description: 'Yesterday',
+    header: 'Ильяз придумал хуйню',
+    description: '02.09.2024',
   },
   {
-    header: 'Departed',
-    description: 'Today',
+    header: 'Собрали команду',
+    description: '02.09.2024',
   },
   {
-    header: 'In transit',
-    description: 'Tomorrow',
+    header: 'Запускаем токен',
+    description: '10.09.2024',
   },
   {
-    header: 'Processed to delivery center',
-    description: 'Next week',
+    header: 'Запускаем мини-апп',
+    description: '15.09.2024',
   },
   {
-    header: 'Shipped',
-    description: 'Someday',
+    header: 'Бреем хомяков',
+    description: 'вечно',
   },
 ];
 
 export const TimelineSection = () => (
-  <Section header="Timeline">
-    <Timeline className={styles.timeline} active={2}>
+  <Section header="Как заработать на порш">
+    <Timeline className={styles.timeline} active={1}>
       {TIMELINE_ITEMS.map((item, index) => (
         <Timeline.Item key={index} header={item.header}>
           {item.description}
